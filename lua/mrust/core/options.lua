@@ -37,3 +37,4 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 opt.scrolloff = 8
+
