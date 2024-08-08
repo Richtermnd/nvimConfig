@@ -3,7 +3,10 @@ vim.g.mapleader = " "
 -- Alias
 local keymap = vim.keymap 
 
-keymap.set("n", "<leader>ee", ":Ex<CR>", { desc = "Open explorer" })
+keymap.set("n", "<leader>ee", function() 
+  vim.cmd(":w")
+  vim.cmd(":Ex")
+end, { desc = "Open explorer" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search higlighting" })
 
 
